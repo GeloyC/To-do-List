@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 const Card = ({title, className, tasks, onUpdate}) => {
 
 
-    const url = `https://to-do-list-zeta-five-98.vercel.app`
+    const url = `http://localhost:5000`
     const [isOpenMenu, setIsOpenMenu] = useState(null);
     const [displayTasks, setDisplayTasks] = useState(true);
 
