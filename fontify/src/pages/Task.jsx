@@ -9,7 +9,7 @@ const Task = () => {
         setNewTask(prev => !prev);
     }
 
-    const url = `http://localhost:5000`
+    const url = `https://to-do-list-zeta-five-98.vercel.app`;
 
     const [taskName, setTaskName] = useState('');
     const [taskSubject, setTaskSubject] = useState('');
