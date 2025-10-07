@@ -6,8 +6,8 @@ import taskRoute from './routes/task.js';
 const app = express();
 
 const allowedOrigins = [
-  'http://localhost:5173',          // your local React dev server
-  'https://your-frontend-name.vercel.app'  // your deployed frontend
+    'http://localhost:5173',        
+    'https://to-do-list-siol.vercel.app/',
 ];
 
 app.use(cors({
@@ -28,5 +28,5 @@ app.use('/task', taskRoute);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost/:${PORT}`);
+    console.log(`Server is running on https://todo-list-4yac.onrender.com`);
 })

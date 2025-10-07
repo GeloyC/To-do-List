@@ -9,7 +9,7 @@ const Task = () => {
         setNewTask(prev => !prev);
     }
 
-    const url = `http://localhost:5000`;
+    const url = `https://todo-list-4yac.onrender.com`;
 
     const [taskName, setTaskName] = useState('');
     const [taskSubject, setTaskSubject] = useState('');
