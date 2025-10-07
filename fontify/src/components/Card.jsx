@@ -68,7 +68,7 @@ const Card = ({title, className, tasks, onUpdate}) => {
             <div className='w-full flex justify-between  items-center px-2'>
                 <label className={'font-bold text-[#FFFCF6]'}>{title}</label>
                 <div onClick={displayTaskList} className='size-8 p-2 rounded-[25px] object-cover hover:bg-[#838383] active:bg-[#1F1F1F] h-fit'>
-                    <img src="/src/assets/icons/add_new_task.png" alt="plus" className={`w-full h-full object-cover transition-all duration-300`}/>
+                    <img src="/assets/icons/add_new_task.png" alt="plus" className={`w-full h-full object-cover transition-all duration-300`}/>
                 </div>
             </div>
 
@@ -81,7 +81,7 @@ const Card = ({title, className, tasks, onUpdate}) => {
                                 <div className='flex flex-row justify-between items-start w-full'>
                                     <label className='text-[#1F1F1F] font-bold break-all'>{task.task_name}</label>
                                     <button onClick={() => openMenu(task.task_id)} className='cursor-pointer flex size-7 p-1 rounded-[25px] active:bg-[#c3c3c3]'>
-                                        <img src="/src/assets/icons/dots.png" alt="three dots" className={`${isOpenMenu === task.task_id ? 'rotate-180' : 'rotate-90'} transition-all duration-200`}/>
+                                        <img src="/assets/icons/dots.png" alt="three dots" className={`${isOpenMenu === task.task_id ? 'rotate-180' : 'rotate-90'} transition-all duration-200`}/>
                                     </button>
                                 </div>
                                 <label className='text-[#1F1F1F] text-[14px]'>Subject: {task.task_subject}</label>

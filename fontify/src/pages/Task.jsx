@@ -97,7 +97,7 @@ const Task = () => {
                 <form className={`absolute bottom-5 left-5 flex flex-col text-[#FFFCF6] gap-2 overflow-hidden`}>
                     <div onClick={handleNewTask} className={`flex flex-row justify-between items-center w-auto bg-[#1F1F1F] p-2 rounded-[10px] active:scale-97`}>
                         <div className='size-8 p-2 rounded-[25px] object-cover hover:bg-[#838383] active:bg-[#1F1F1F] h-fit'>
-                            <img src="/src/assets/icons/add_new_task.png" alt="plus" className={`w-full h-full object-cover ${newTask ? 'rotate-45' : 'rotate-0'} transition-all duration-300`}/>
+                            <img src="/assets/icons/add_new_task.png" alt="plus" className={`w-full h-full object-cover ${newTask ? 'rotate-45' : 'rotate-0'} transition-all duration-300`}/>
                         </div>
                         <label className={'flex justify-end font-bold text-[20px] text-[#FFFCF6] pr-2 w-full'}>NEW TASK</label>
                     </div>
