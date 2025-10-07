@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "node": "^24.9.0",
+    "nodemon": "^3.1.10",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-draggable": "^4.4.6",
+    "tailwindcss": "^4.1.13"
+  }
+}
