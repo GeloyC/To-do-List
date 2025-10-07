@@ -8,6 +8,7 @@ const app = express();
 const allowedOrigins = [
     'http://localhost:5173',        
     'https://to-do-list-siol.vercel.app/',
+    'https://todo-list-4yac.onrender.com'
 ];
 
 app.use(cors({
