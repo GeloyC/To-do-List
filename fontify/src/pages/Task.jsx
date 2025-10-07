@@ -94,7 +94,7 @@ const Task = () => {
                 </button> */}
 
                 {/* Create new task here */}
-                <form className={`absolute bottom-5 left-5 flex flex-col text-[#FFFCF6] gap-2 overflow-hidden`}>
+                <form className={`absolute bottom-5 left-5 flex flex-col text-[#FFFCF6] gap-2 overflow-hidden z-10`}>
                     <div onClick={handleNewTask} className={`flex flex-row justify-between items-center w-auto bg-[#1F1F1F] p-2 rounded-[10px] active:scale-97`}>
                         <div className='size-8 p-2 rounded-[25px] object-cover hover:bg-[#838383] active:bg-[#1F1F1F] h-fit'>
                             <img src="/assets/icons/add_new_task.png" alt="plus" className={`w-full h-full object-cover ${newTask ? 'rotate-45' : 'rotate-0'} transition-all duration-300`}/>
