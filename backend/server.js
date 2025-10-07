@@ -5,11 +5,15 @@ import taskRoute from './routes/task.js';
 
 const app = express();
 
-const allowedOrigins = [
-    'http://localhost:5173',        
-    'https://to-do-list-siol.vercel.app/',
-    'https://todo-list-4yac.onrender.com'
-];
+app.use(cors({
+    origin: [
+        'http://localhost:5173', // for local dev
+        'https://to-do-list-siol.vercel.app', // your main vercel domain
+        'https://to-do-list-siol-3qyhew7d1-angelo-cabangals-projects.vercel.app' // preview deploys
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
 
 app.use(cors({
     origin: function (origin, callback) {
@@ -29,5 +33,5 @@ app.use('/task', taskRoute);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`Server is running on https://todo-list-4yac.onrender.com`);
+    console.log(`Server running on http://localhost:${PORT}`);
 })
